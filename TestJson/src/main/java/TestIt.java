@@ -29,7 +29,7 @@ public class TestIt {
 			    String ime=(String) json.getJSONObject("payload").get("name");
 			    System.out.println(ime);
 			} catch (Exception e) {
-				e.printStackTrace();}
+				System.out.println("Няма регистрирана фирма с ЕИК "+num);}
 		}
 		
 		else if(num.toCharArray().length==10) {
@@ -38,7 +38,7 @@ public class TestIt {
 			    String ime=(String) json.getJSONObject("payload").get("name");
 			    System.out.println(ime);
 			} catch (Exception e) {
-				e.printStackTrace();}}
+				System.out.println("Няма регистрирана личност с ЕГН "+num);}}
 		
 	}
 	
